@@ -1,0 +1,74 @@
+*,body,html{
+    margin:0;
+    padding: 0;
+}
+
+/* custom scrollbar css */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color:#e9edf0;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #385aef; 
+  }
+/* custom scrollbar css */
+
+/* navbar css */
+.navbar{
+    width: 100%;
+}
+.bg-img{
+    width: 100%;
+    position:relative;
+}
+.bg-overlay{
+    background-color: #1d1d2161;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+.bg-img img{
+    background-color:linear-gradient() ;
+    width: 100%;
+}
+.navbar-wrapper{
+    position:absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.nav-links{
+    color: white;
+    text-decoration: none;
+    font-weight: 300 !important;
+    padding: 0px 20px;
+    font:16px 'Poppins',sans-serif;
+}
+.fa-bars{
+    color: white !important;
+    font-weight: 200 !important;
+    font-size:20px !important;
+}
+
+.menu-icon{
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+.fa-bars{
+    
+}
+/* navbar css */
