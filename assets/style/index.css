@@ -2,7 +2,30 @@
     margin:0;
     padding: 0;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
 
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
 /* custom scrollbar css */
 ::-webkit-scrollbar {
     width: 7px;
@@ -23,25 +46,162 @@
 .navbar{
     width: 100%;
 }
-.bg-img{
-    width: 100%;
-    position:relative;
-}
-.bg-overlay{
-    background-color: #1d1d2161;
-    position: absolute;
-    content: "";
-    width: 100%;
+/* side menu css */
+.side-menu{
     height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: #00bcd4;
+    overflow-x: hidden;
+    transition: 0.5s ease-out;
+    padding-top: 60px;
+    /* padding-left: 50px; */
 }
-.bg-img img{
-    background-color:linear-gradient() ;
+
+.sidemenu-link{
+    padding: 8px 8px 8px 72px;
+  font: 25px 'Poppins', sans-serif;
+  color: white;
+  width: 2%;
+  display: block;
+  font-weight: 300;
+  position: relative;
+  text-decoration: none ;
+}
+.sidemenu-link::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 70px;
+    bottom: 5px;
+    transition: 0.3s;
+}
+.sidemenu-link:hover::before{
     width: 100%;
 }
-.navbar-wrapper{
+.side-menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-media{
+   
+    padding-top: 100px;
+    padding-left:46px;
+    padding-bottom: 35px;
+}
+.social-links{
+    display: flex;
+    
+    
+}
+.social-links li{
+    list-style: none;
+    padding: 0px 15px;
+}
+.social-links li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size:16px;
+    color: white;
+}
+
+.social-links li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.5s;
+}
+.social-links li a:hover::before{
+    background: white
+}
+.social-links li a .fa-facebook:hover::before{
+    color:#4267B2 !important; ;
+}
+.social-links li a .fa-instagram:hover::before{
+    color: #C32AA3 !important ;
+}
+.social-links li a .fa-twitter:hover::before{
+    color:#1DA1F2 !important;
+}
+
+.copyright-text{
+    font:13px 'Roboto',sans-serif;
+    color:white;
+    padding-left: 70px;
+    padding-bottom: 100px;
+}
+/* side menu css  end*/
+
+/* menu scroll css */
+
+.navbar-scroll{
+    position: fixed;
+    top: 0px !important;
+    background-color: white;
+    height: 40px;
+    padding: 20px 0px;
+    width: 100%;
+    z-index: 9;
+    transition: 0.2s ease-in;
+  }
+
+  .navbar-scroll .nav-links{
+      color: black;
+  }
+.navbar-scroll .white-logo{
+    opacity: 0 !important;
+    display: none;
+}
+
+.navbar-scroll .black-logo{
+    opacity: 1 !important;
+    width: 100% !important;
+}
+.navbar-scroll .fa-bars{
+    color: black!important;
     position:absolute;
+    right: 0px;
+    top:20px !important;
+}
+/* menu scroll css end */
+.bg-img{
+    background-image: url(../../assets/images/bg-img1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    filter: brightness(60%)
+}
+
+.navbar-wrapper{
+    position: fixed;
     top: 30px;
     width: 100%;
+    z-index: 9;
 }
 
 .navbar-nav{
@@ -56,6 +216,15 @@
     font-weight: 300 !important;
     padding: 0px 20px;
     font:16px 'Poppins',sans-serif;
+}
+
+.brand-img .white-logo{
+    opacity: 1;
+}
+
+.brand-img .black-logo{
+    opacity: 0;
+    width: 0;
 }
 .fa-bars{
     color: white !important;
@@ -78,7 +247,7 @@
     flex-direction: column;
     flex-wrap: wrap;    
     position: absolute;
-    top: 30px;
+    top: 70px;
     text-align: center;
     width: 100%;
 }
@@ -90,15 +259,35 @@
 .play-btn{
     width: 60px;
     height: 60px;
+    padding: 5px;
     background-color: #00bcd4;
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content:center;
+    animation: pulse_effect 1s infinite;
     color: white;
+    justify-content:center;
     font-size: 20px !important;
 }
 
+@keyframes pulse_effect{
+    0%{
+        box-shadow:0 0 0 5px rgb(255 255 255 / 90%);
+    }
+    25%{
+        box-shadow:0 0 0 10px rgb(255 255 255 / 60%);
+    }
+    70%{
+        box-shadow:0 0 0 15px rgb(255 255 255 / 30%);
+    }
+    100%{
+        box-shadow:0 0 0 20px rgb(255 255 255 / 10%);
+    }
+}
+.play-btn:hover{
+    background-color: white;
+    color: #00bcd4;
+}
 .brand-tagline{
     display: flex;
     justify-content:center;
@@ -121,7 +310,7 @@
 
 .textline{
     font:15px 'Poppins',sans-serif;
-    font-weight:200 ;
+    font-weight:300 ;
     width: 52%;
     color: white;    
 }
@@ -133,7 +322,7 @@
 .activebtn{
     display: flex;
     justify-content: space-evenly;
-    width: 13%;
+    padding-right: 20px;
 }
 .learnmore-btn-active{
     border:none;
@@ -151,4 +340,308 @@
     font-weight: 500;
     padding: 15px 34px;
 }
+.learnmore-btn-active:hover{
+    background-color: transparent;
+    border:1px solid #00bcd4;
+    color: #00bcd4;
+}
+.learnmore-btn-notactive:hover{
+    background-color: white;
+    color: #2b2b2b;
+}
 /*Hero section  end*/
+
+/* brand Feature  css*/
+
+.brand-wraper{
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    width: 100%;
+}
+.brand-work{
+    width: 50%;
+}
+
+.side-img{
+    width: 50%;
+}
+
+.side-img img{
+    max-width: 100%;
+    width: 764px;
+    height: 955px;
+}
+
+.work-container{
+padding: 90px 74px;
+}
+.work-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.work-section .span-text{
+    color: #00bcd4;
+    font:16px 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.work-section .work-tagline{
+    font: 54px 'Poppins',sans-serif;
+    font-weight: 500;
+    line-height: 62px;
+    padding-top:20px ;
+}
+
+.work-section .brand-text{
+    color: #6D6D6D;
+    font:15px 'Roboto-light',sans-serif;
+    padding-top: 30px;
+    width: 85%;
+    line-height: 25px;
+}
+.project-info{
+    display: flex;
+    justify-content: space-between;
+    padding-top:25px;
+    padding-bottom:10px;
+}
+.project-progress{
+    width: 80%;
+}
+.project-info .project-name{
+    color: #2b2b2b;
+    font: 16px 'Poppins',sans-serif;
+    font-weight: 500;
+}
+.project-info .progress-number{
+    color: #2b2b2b;
+    font: 16px 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.progress-line{
+    position: relative;
+    height: 10px;
+    border-radius: 25px;
+    width: 100%;
+    background-color:#eaeaea ;
+    
+}
+
+.progress-line span{
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    border-radius: 25px;
+    background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
+  
+}
+
+
+.progress-line .proj-manag{
+    width:90%;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: progress-animate 1.5s cubic-bezier(1,0,0.5,1) forwards;
+}
+.progress-line .web-cons{
+    width:75%;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: progress-animate 1.5s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes progress-animate {
+    100%{
+        transform:scaleX(1);
+    }
+}
+.work-btn{
+    padding-top: 80px;
+}
+.get-started-btn{
+    border: 2px solid #2b2b2b;
+    background-color: transparent;
+    color: #2b2b2b;
+    font:14px 'Poppins',sans-serif;
+    font-weight: 500;
+    padding: 12px 38px;
+}
+
+.get-started-btn:hover{
+    background-color: #2b2b2b;
+    color: white;
+    transition: 0.2;
+}
+/* brand Feature end*/
+
+.info-container{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.info-wraper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:130px 0px;
+}
+
+.info-wraper .info-span{
+    font:16px 'Poppins',sans-serif;
+    color: #2B2B2B;
+    font-weight: 500;
+}
+
+.info-wraper .info-tag{
+    font: 48px 'Poppins',sans-serif;
+    background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 500;
+}
+
+.info-text-container{
+    width: 100%;
+}
+.info-text{
+    width: 44%;
+    padding-top: 15px;
+    margin:0 auto;
+    line-height: 25px !important;
+    color:#6D6D6D ;
+    font: 15px 'Roboto-light',sans-serif;
+}
+
+.service-container{
+    width: 100%;
+    padding-bottom:70px ;
+}
+.service-wraper{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0px 190px;
+}
+.service-webdes{
+    padding-right: 20px;
+}
+.service-webdev{
+    padding-right: 20px;
+}
+.service-span{
+    font:40px 'Roboto-bold',sans-serif;
+    background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 500;
+}
+
+.service-text{
+font: 16px 'Poppins',sans-serif;
+color: #2B2B2B;
+padding-top: 30px;
+padding-bottom:20px;   
+font-weight: 500;
+}
+
+.service-desc{
+    font: 15px 'Poppins',sans-serif;
+    color: #6D6D6D;
+    font-weight: 300;
+    
+}
+/* Basic company info css */
+
+/* Exculsive digital service */
+.digital-container{
+    width: 100%;
+    position: relative;
+}
+.dg-img{
+    width: 100%;
+    background-image: url(../../assets/images/dg-bg-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    filter: brightness(50%);
+    filter: blur(1px);
+}
+.digital-wraper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    width: 100%;
+}
+.dg-span{
+    font:15px 'Poppins',sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.dg-text{
+    color: white;
+    font:40px 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.dg-btn-div{
+    padding-top: 20px;
+}
+.dg-btn{
+    background-color: #00bcd4;
+    color: white;
+    border:none;
+    font: 14px 'Poppins',sans-serif;
+    font-weight: 500;
+    padding: 15px 34px;
+}
+/* Exculsive digital service */
+
+/* company team */
+.team-container{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+.team-wrapper{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding:130px 0px;
+}
+
+.team-span{
+    font:16px 'Poppins',sans-serif;
+    color: #2B2B2B;
+    font-weight: 500;
+}
+
+.team-tagline{
+    background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font: 48px 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.team-text--div{
+    width: 100%;
+}
+
+.team-text{
+    width: 44%;
+    padding-top: 15px;
+    margin:0 auto;
+    line-height: 25px !important;
+    color:#6D6D6D ;
+    font: 15px 'Roboto-light',sans-serif;
+}
+/* company team */

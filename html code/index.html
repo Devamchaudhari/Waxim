@@ -7,66 +7,111 @@
     <title>Waxim</title>
     <link rel="stylesheet" href="../assets/style/index.css" />
     <link rel="stylesheet" href="../assets/style/responsive.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="main-container">
       <!-- navbar section -->
 
       <navbar class="navbar">
-          <!-- hero background image -->
-          <div class="bg-img">
-            <div class="bg-overlay"></div>
-            <img src="../assets/images/bg-img1.jpg" alt="waxim image" />
-          </div>
-          <!-- hero background image -->
+        <!-- hero background image -->
+        <!-- hero background image -->
 
-          <!-- navbar menu section -->
-          <div class="navbar-wrapper">
-            <div class="navbar-nav">
-                <div class="nav-one">
-                <a href="#" class="nav-links">Home</a>
-                <a href="#" class="nav-links">About</a>
-                <a href="#" class="nav-links">Team</a>
-                <a href="#" class="nav-links">Work</a>
+        <!-- navbar menu section -->
+        <div class="navbar-wrapper navbar-scroll" id="nav">
+          <div class="navbar-nav" id="menu-blur">
+            <div class="nav-one">
+              <a href="#" class="nav-links">Home</a>
+              <a href="#" class="nav-links">About</a>
+              <a href="#" class="nav-links">Team</a>
+              <a href="#" class="nav-links">Work</a>
             </div>
-            
 
             <div class="brand-img">
-                    <img src="../assets/images/brand-logo-white.png" alt="brand img">
+              <img
+                src="../assets/images/logo-black.png"
+                alt="brand img"
+                class="black-logo"
+              />
+              <img
+                src="../assets/images/brand-logo-white.png"
+                alt="brand img"
+                class="white-logo"
+              />
             </div>
 
             <div class="nav-two">
-                <a href="#" class="nav-links">Pricing</a>
-                <a href="#" class="nav-links">App</a>
-                <a href="#" class="nav-links">Blog</a>
-                <a href="#" class="nav-links">Contact</a>
-            </div>
-    
-            </div>
-            <div class="menu-icon">
-                <a href="#">
-                    <i class="fa fa-bars"></i>
-                </a>
+              <a href="#" class="nav-links">Pricing</a>
+              <a href="#" class="nav-links">App</a>
+              <a href="#" class="nav-links">Blog</a>
+              <a href="#" class="nav-links">Contact</a>
             </div>
           </div>
-          <!-- navbar menu section -->
-        
-         <!-- navbar section end-->
-      </navbar>
+          <div class="menu-icon" id="menuicon" onclick="sidemenu()">
+            <a href="#">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+        <!-- navbar menu section -->
 
+        <!-- side menu -->
+        <div class="side-menu" id="sidemenu">
+          <a href="#" class="close-btn" onclick="closeNav()">&times;</a>
+          <a href="#" class="sidemenu-link">Home</a>
+          <a href="#" class="sidemenu-link">About</a>
+          <a href="#" class="sidemenu-link">Team</a>
+          <a href="#" class="sidemenu-link">Work</a>
+          <a href="#" class="sidemenu-link">Pricing</a>
+          <a href="#" class="sidemenu-link">App</a>
+          <a href="#" class="sidemenu-link">Blog</a>
+          <a href="#" class="sidemenu-link">Contact</a>
+
+          <div class="social-media">
+            <ul class="social-links">
+              <li>
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="copyright-text">
+            <p>
+              © 2019 Wexim. Made With Love by Themesindustry
+              <i class="fa fa-heart"></i> Colorlib
+            </p>
+          </div>
+        </div>
+        <!-- side menu end -->
+
+        <!-- navbar section end-->
+      </navbar>
+      <div class="bg-img"></div>
       <!-- Hero main section -->
-      <div class="hero-container">
+      <div class="hero-container" id="hero-container">
         <div class="play-btn-wrapper">
           <div class="play-btn">
-          <i class="fa fa-play"></i>
-        </div>
+            <i class="fa fa-play"></i>
+          </div>
         </div>
         <div class="brand-tagline">
           <h1 class="tagline">Most Flexible One Page HTML5 Template</h1>
         </div>
         <div class="brand-text">
-          <p class="textline">The integration of web fonts has always been one of the largest contributing factors to diversity in the overall look and feel of websites today vs. yesterday.</p>
+          <p class="textline">
+            The integration of web fonts has always been one of the largest
+            contributing factors to diversity in the overall look and feel of
+            websites today vs. yesterday.
+          </p>
         </div>
         <div class="learnmore-btn">
           <div class="activebtn">
@@ -78,9 +123,135 @@
         </div>
       </div>
       <!-- Hero main section -->
+
+      <!-- brand Feature -->
+
+      <div class="brand-wraper">
+        <div class="brand-work">
+          <div class="work-container">
+            <div class="work-section">
+              <span class="span-text">ALWAYS BEHIND THE BRANDS</span>
+              <h1 class="work-tagline">
+                A Studio Helping Web 2.0 Gain Some Momentum.
+              </h1>
+              <p class="brand-text">
+                The integration of web fonts has always been one of the largest
+                contributing factors to diversity in the overall look and feel
+                of websites today vs. yesterday.
+              </p>
+            </div>
+            <div class="project-progress">
+              <div class="project-info">
+                <p class="project-name">Project Management</p>
+                <p class="progress-number">90%</p>
+              </div>
+              <div class="progress-line proj-manag">
+                <span class="proj-manag"></span>
+              </div>
+              <div class="project-info">
+                <p class="project-name">Web Consulting</p>
+                <p class="progress-number">75%</p>
+              </div>
+              <div class="progress-line web-cons">
+                <span class="web-cons"></span>
+              </div>
+              <div class="project-info">
+                <p class="project-name">Web Consulting</p>
+                <p class="progress-number">75%</p>
+              </div>
+              <div class="progress-line web-cons">
+                <span class="web-cons"></span>
+              </div>
+            </div>
+            <div class="work-btn">
+              <button class="get-started-btn">Get started</button>
+            </div>
+          </div>
+        </div>
+        <div class="side-img">
+          <img src="../assets/images/half-block1.jpg" alt="Girl" />
+        </div>
+      </div>
+      <!-- brand Feature -->
+
+      <!-- Basic company info -->
+      <div class="info-container">
+        <div class="info-wraper">
+          <span class="info-span">Basic info about company</span>
+          <h1 class="info-tag">Our Services</h1>
+          <div class="info-text-container">
+            <p class="info-text">
+              Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
+              suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
+              metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
+              justo sed mi finibus, vel tristique risus faucibus.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-container">
+          <div class="service-wraper">
+            <div class="service-webdes">
+              <span class="service-span">01.</span>
+              <p class="service-text">Website Design</p>
+              <p class="service-desc">
+                Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
+                accumsan ipsum dolor sit amet, consectetur adipiscing.
+              </p>
+            </div>
+            <div class="service-webdev">
+              <span class="service-span">02.</span>
+              <p class="service-text">Website Development</p>
+              <p class="service-desc">
+                Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
+                accumsan ipsum dolor sit amet, consectetur adipiscing
+              </p>
+            </div>
+            <div class="service-proj">
+              <span class="service-span">03.</span>
+              <p class="service-text">Project Management</p>
+              <p class="service-desc">
+                Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
+                accumsan ipsum dolor sit amet, consectetur adipiscing
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Basic company info -->
+      <!-- exculsive digital service -->
+      <div class="digital-container">
+        <div class="dg-img"></div>
+        <div class="digital-wraper">
+          <span class="dg-span">
+            Unleash your creative potential with Wexim
+          </span>
+          <h1 class="dg-text">Looking For Exclusive Digital Services?</h1>
+          <div class="dg-btn-div">
+            <button class="dg-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- exculsive digital service -->
+
+      <!-- company team -->
+      <div class="team-container">
+        <div class="team-wrapper">
+          <span class="team-span"> Basic info about company </span>
+          <h1 class="team-tagline">Creative Heads</h1>
+          <div class="team-text--div">
+            <p class="team-text">
+              Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
+              suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
+              metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
+              justo sed mi finibus, vel tristique risus faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- company team -->
     </div>
-     
-    </div>
+
     <script src="../assets/script/index.js"></script>
   </body>
 </html>
