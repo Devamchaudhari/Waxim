@@ -162,6 +162,7 @@
     background-color: white;
     height: 40px;
     padding: 20px 0px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
     width: 100%;
     z-index: 9;
     transition: 0.2s ease-in;
@@ -603,13 +604,19 @@ font-weight: 500;
     font-weight: 500;
     padding: 15px 34px;
 }
+.dg-btn:hover{
+    background-color: transparent;
+    border:1px solid #00bcd4;
+    color: #00bcd4;
+    
+}
 /* Exculsive digital service */
 
 /* company team */
 .team-container{
     height: 100%;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 .team-wrapper{
     display: flex;
@@ -644,4 +651,265 @@ font-weight: 500;
     color:#6D6D6D ;
     font: 15px 'Roboto-light',sans-serif;
 }
+
+.comp-wrapper{
+    width: 100%;
+}
+.comp-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom:200px ;
+    align-items: center;
+}
+.team-box-one{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background: #fcfcfc;
+}
+
+.member-one{
+    display: flex;
+    width: 100%;
+}
+.member-two{
+    display: flex;
+    width: 100%;
+}
+.member-three{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+.member-four{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.team-img{
+    width: 50%;
+    overflow: hidden ;
+}
+
+.team-img img{
+    width: 100%;
+    height: auto;
+}
+ .member-one .team-img img:hover{   
+     transform: scale(1.1);
+     overflow: hidden;
+    transition: all 0.3s ease-in-out;
+} 
+.member-two .team-img img:hover{   
+    transform: scale(1.1);
+    overflow: hidden;
+   transition: all 0.3s ease-in-out;
+} 
+.member-three .team-img img:hover{   
+    transform: scale(1.1);
+    overflow: hidden;
+   transition: all 0.3s ease-in-out;
+} 
+.member-four .team-img img:hover{   
+    transform: scale(1.1);
+    overflow: hidden;
+   transition: all 0.3s ease-in-out;
+} 
+.member-one:hover{
+    background: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
+    color: white !important;
+}
+.member-two:hover{
+    background: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
+    color: white !important;
+}
+
+.member-three:hover{
+    background: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
+    color: white !important;
+}
+.member-three .team-info-section:hover{
+    color: white !important;
+    -webkit-text-fill-color: #fff;
+}
+.member-three .desig-name:hover{
+    /* color: white !important; */
+    -webkit-text-fill-color: #fff;
+}
+.member-three .team-socialmedia a:hover{
+    /* color: white !important; */
+    -webkit-text-fill-color: #fff;
+}
+
+.member-four:hover{
+    background: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
+    color: white !important;
+}
+.team-info-section{
+    padding-left: 17px;
+    padding-top: 27px;
+    height: auto;
+    width: 40%;
+}
+
+.team-info-section .team-name{
+    font:24px 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.team-info-section .desig-name{
+    font:15px 'Poppins',sans-serif;
+    background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 500;
+}
+
+.team-info-section .comp-text{
+    font:15px 'Roboto-light',sans-serif;
+    color: #6D6D6D;
+    line-height: 25px;
+    width: 82%;
+    padding-top:10px;
+}
+.team-socialmedia{
+    padding: 20px 10px;
+}
+
+.team-socialmedia a{
+    color: #a3a3a3;
+    padding:0px 10px;
+}
+
+.team-box-two{
+    width:80%;
+    height: 100%;
+    margin-top: -4px;
+    display: flex;
+    flex-direction: row-reverse;
+    background: #fcfcfc;
+}
+
 /* company team */
+
+/* creative protfolio */
+.portfolio-container{
+    width: 100%;
+    height: auto;
+    background-color: #f8f9fa;
+}
+.portfolio-wraper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio-box-one{
+    width: 45%;
+    padding-left: 151px
+
+}
+.portfolio-img-wraper{
+    width: 100%;
+}
+ .img-one{
+    border:20px solid white;
+    margin-top: -75px;
+}
+
+ .img-two{
+    border:20px solid white;
+    /* margin-top: -75px; */
+}
+
+.img-three{
+    border:20px solid white;
+    /* margin-top: -75px; */
+}
+
+ .img-four{
+    border:20px solid white;
+    /* margin-top: -75px; */
+}
+.portfolio-creative{
+    text-align: center;
+    width: 75%;
+    padding-bottom: 120px;
+}
+
+.portfolio-box-two{
+    width: 45%;
+}
+
+.creative-span{
+    color: #00bcd4;
+    font:16px 'Poppins',sans-serif;
+    font-weight: 500;
+}
+.creative-tagline{
+    font: 48px 'Poppins',sans-serif;
+    background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 500;
+}
+
+.creative-text-wraper{
+    width: 100%;
+}
+.creative-text{
+    width: 86%;
+    margin: 0 auto;
+    font:15px 'Poppins',sans-serif;
+    font-weight:300 ;
+    color: #6D6D6D;  
+
+}
+.portfolio-box-three{
+    width: 40%;
+    padding-left: 159px;
+
+}
+.portfolio-box-four{
+    width: 45%;
+    padding-top: 74px;
+    padding-left: 70px;
+}
+.portfolio-box-five{
+    width: 70%;
+    display: flex;
+}
+.portfolio-project{
+    width: 25%;
+}
+.portfolio-text{
+    font:15px 'Roboto-light',sans-serif;
+    color: #6D6D6D;
+}
+.project-number{
+    font:90px 'Poppins', sans-serif;
+    color: #00bcd4;
+    font-weight: 600;
+}
+.project-btn{
+    width: 20%;
+    padding-top: 63px;
+}
+
+.pro-view-btn{
+    border:none;
+    padding:15px 35px;
+    color: white;
+    font: 14px 'Poppins',sans-serif;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
+
+}
+
+
+
+
+/* creative protfolio */

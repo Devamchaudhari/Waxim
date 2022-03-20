@@ -1,3 +1,8 @@
+@media screen and (max-width:1159px){
+    .team-info-section{
+        padding-top: 0px;
+    }
+}
 @media screen and (max-width: 1000px) {
     .nav-one{
         display: none;
@@ -16,6 +21,7 @@
         width: 100%;
         padding: 0px 70px;
     }
+    
     .navbar-scroll .black-logo{
         width: 129px !important;
         height: auto !important;
@@ -28,6 +34,9 @@
     }
     .service-wraper{
         padding:0px 31px;
+    }
+    .team-info-section{
+        padding-top:0px ;
     }
 }
 @media screen and (max-width:990px){
@@ -48,6 +57,27 @@
     .project-progress{
         width: 100%;
     }
+    .member-one{
+        display: none;
+    }
+    .member-four{
+        display: none;
+    }
+    .team-box-one{
+        width:60%;
+    }
+    .team-box-two{
+        width:60%;
+    }
+    .team-info-section .comp-text{
+        width:100%
+    }
+    .team-info-section{
+        /* padding-top:10px ; */
+    }
+    .team-socialmedia{
+        padding:0px;
+    }
 }
 @media screen and (max-width: 840px) {
  .bg-img img{
@@ -62,6 +92,9 @@
 .textline{
     width: 88%;
 } 
+.team-info-section{
+    width: 45%;
+}
 }
 
 @media screen and (max-width:680px){
@@ -79,8 +112,37 @@
     }
 }
 
-@media screen and (max-width:660px){
-
+@media screen and (max-width:602px){
+    .comp-section{
+        flex-wrap: wrap;
+    }
+    .member-two{
+        flex-direction: column;
+    }
+    .member-three{
+        flex-wrap: wrap;
+    }
+    .team-box-one{
+        width: 82%;
+    }
+    .team-box-two{
+        width: 82%;
+    }
+    .team-img{
+        width: 100%;
+    }
+    .team-info-section{
+        padding-bottom: 20px;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .team-socialmedia{
+        padding-top: 22px;
+    }
+    .team-info-section .comp-text{
+        width:100%
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -106,5 +168,26 @@
     }
     .work-btn{
         padding-left: 74px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .work-btn{
+        padding-left: 34px; 
+    }
+    .digital-wraper{
+        top: 101px;
+    }
+    .team-text{
+        width: 81%;
+    }
+    .service-wraper{
+        padding:0px;
+    }
+    .service-webdes{
+        padding-right:0px;
+    }
+    .service-webdev{
+        padding-right: 0px;
     }
 }
