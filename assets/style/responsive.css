@@ -1,193 +1,439 @@
-@media screen and (max-width:1159px){
-    .team-info-section{
-        padding-top: 0px;
-    }
+@media screen and (max-width: 1492px) {
+  .portfolio-box-one {
+    width: 44%;
+    padding-left: 58px;
+  }
+  .portfolio-box-three {
+    width: 39%;
+    padding-left: 30px;
+  }
+  /* .overlay-wraper{
+    width: 45%;
+  }
+  .overlay-wraper-three{
+    width: 50%;
+  } */
+}
+
+@media screen and (max-width: 1230px) {
+  .portfolio-box-one {
+    width: 100%;
+  }
+  .portfolio-box-two {
+    width: 100%;
+  }
+  .portfolio-creative {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .portfolio-box-one {
+    width: 100%;
+    text-align: center;
+  }
+  .portfolio-box-two {
+    width: 100%;
+  }
+  .portfolio-img-wraper {
+    text-align: center;
+  }
+  .portfolio-box-three {
+    width: 100%;
+    padding-left:0px;
+    padding-top: 54px;
+  }
+  .portfolio-box-four {
+    padding-left: 0px;
+  }
+  .portfolio-box-five {
+    width: 60%;
+    text-align: center;
+  }
+  .portfolio-project {
+    width: 60%;
+    padding-top: 65px;
+  }
+  .project-btn {
+    width: 50%;
+    padding-top: 126px;
+  }
+  
+  .plan-section-one{
+      padding-left: 34px;
+  }
+  .my-overlay{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1159px) {
+  .team-info-section {
+    padding-top: 0px;
+  }
+  .app-slider{
+    left: 29px;
+    top: 68px;
+  }
+  .portfolio-box-four{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1070px){
+  .overlay-wraper{
+    width: 290px;
+    left: 234px;
+  }
+  .portfolio-box-four{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1000px) {
-    .nav-one{
-        display: none;
-    }
-    
-    .nav-two{
-        display: none;
-    }
-    .tagline{
-        width: 80%;
-    }
+  .nav-one {
+    display: none;
+  }
 
-    .brand-img{
-        display: flex;
-        justify-content: start;
-        width: 100%;
-        padding: 0px 70px;
-    }
-    
-    .navbar-scroll .black-logo{
-        width: 129px !important;
-        height: auto !important;
-        opacity: 1 !important;
-        padding-left: 0px;
-        max-width: 100% !important;
-    }
-    .info-text{
-        width: 67%;
-    }
-    .service-wraper{
-        padding:0px 31px;
-    }
-    .team-info-section{
-        padding-top:0px ;
-    }
+  .nav-two {
+    display: none;
+  }
+  .tagline {
+    width: 80%;
+  }
+
+  .brand-img {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 0px 70px;
+  }
+
+  .navbar-scroll .black-logo {
+    width: 129px !important;
+    height: auto !important;
+    opacity: 1 !important;
+    padding-left: 0px;
+    max-width: 100% !important;
+  }
+  .info-text {
+    width: 67%;
+  }
+  .service-wraper {
+    padding: 0px 31px;
+  }
+  .team-info-section {
+    padding-top: 0px;
+  }
+
+  .portfolio-box-one{
+    padding-left: 0px;
+  }
+  .portfolio-box-two{
+      display: none;
+  }
+  .portfolio-box-four{
+      display: none;
+  }
+  .plans-container{
+      flex-wrap: wrap;
+  }
+  .plan-section-one{
+    padding-left: 178px;
+  }
+  .plan-box-one{
+      width: 100%;
+  }
+  .plan-section-two{
+    padding-left: 178px;
+    padding-top: 46px;
+  }
+  .plan-box-two{
+      width: 100%;
+  }
+  .app-slider{
+    left: 27px;
+    top: 61px;
+  }
 }
-@media screen and (max-width:990px){
-    .work-container{
-        padding:90px 128px;
-    }
-    .brand-work{
-        width:100%
-    }
-    .side-img{
-        width: 100%;
-    }
-    .side-img img{
-        max-width: 100%;
-        width: 998px;
-        height: 100%;
-    }
-    .project-progress{
-        width: 100%;
-    }
-    .member-one{
-        display: none;
-    }
-    .member-four{
-        display: none;
-    }
-    .team-box-one{
-        width:60%;
-    }
-    .team-box-two{
-        width:60%;
-    }
-    .team-info-section .comp-text{
-        width:100%
-    }
-    .team-info-section{
-        /* padding-top:10px ; */
-    }
-    .team-socialmedia{
-        padding:0px;
-    }
+@media screen and (max-width: 990px) {
+  .work-container {
+    padding: 90px 128px;
+  }
+  .brand-work {
+    width: 100%;
+  }
+  .side-img {
+    width: 100%;
+  }
+  .side-img img {
+    max-width: 100%;
+    width: 998px;
+    height: 100%;
+  }
+  .project-progress {
+    width: 100%;
+  }
+  .member-one {
+    display: none;
+  }
+  .member-four {
+    display: none;
+  }
+  .team-box-one {
+    width: 60%;
+  }
+  .team-box-two {
+    width: 60%;
+  }
+  .team-info-section .comp-text {
+    width: 100%;
+  }
+  .team-info-section {
+    /* padding-top:10px ; */
+  }
+  .team-socialmedia {
+    padding: 0px;
+  }
+  .dream-container{
+    flex-wrap: wrap;
+  }
+  .dream-box-one{
+    width: 100%;
+  }
+  .dream-box-two{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 840px) {
- .bg-img img{
-     width: 100%;
-        height: 600px;
-        background-attachment: fixed;
-        background-position: center 0px;
-}
-.tagline{
+  .bg-img img {
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center 0px;
+  }
+  .tagline {
     font-size: 35px;
-}
-.textline{
+  }
+  .textline {
     width: 88%;
-} 
-.team-info-section{
+  }
+  .team-info-section {
     width: 45%;
-}
-}
-
-@media screen and (max-width:680px){
-    .service-wraper{
-        flex-wrap: wrap;
-    }
-    .service-webdes{
-        padding-bottom:30px;
-    }
-    .service-webdev{
-        padding-bottom:30px;
-    }
-    .side-menu{
-        /* width:100% !important; */
-    }
+  }
+  .plan-section-one{
+    padding-left: 116px;
+  }
+  .plan-section-two{
+    padding-left: 116px;
+  }
+  .app-slider{
+    left: 23px;
+    top: 49px;
+  }
 }
 
-@media screen and (max-width:602px){
-    .comp-section{
-        flex-wrap: wrap;
-    }
-    .member-two{
-        flex-direction: column;
-    }
-    .member-three{
-        flex-wrap: wrap;
-    }
-    .team-box-one{
-        width: 82%;
-    }
-    .team-box-two{
-        width: 82%;
-    }
-    .team-img{
-        width: 100%;
-    }
-    .team-info-section{
-        padding-bottom: 20px;
-        padding-left: 0;
-        width: 100%;
-        text-align: center;
-    }
-    .team-socialmedia{
-        padding-top: 22px;
-    }
-    .team-info-section .comp-text{
-        width:100%
-    }
+@media screen and (max-width:764px){
+  .testimonal-container{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .testimonal-box-one{
+    width: 100%;
+  }
+  .testimonal-box-two{
+    width: 100%;
+  }
+  .mobile-container{
+    padding-bottom: 0px;
+  }
+  .design-container{
+    flex-wrap: wrap;
+  }
+  .design-box-one{
+    width: 100%;
+  }
+  .design-box-two{
+    width: 100%;
+    padding-top: 57px;
+  }
+  .design-box-three{
+    width: 100%;
+    padding-top: 70px;
+  }
+  .app-image img{
+    width: 30%;
+  }
+  .app-slider{
+    left: 63px;
+    top: 52px;
+  }
+  .app-feature-two{
+    padding-top: 45px;
+  }
+  .contact-container{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .contact-box-one{
+    width: 100%;
+    padding-top: 30px;
+  }
+  .contact-box-two{
+    width: 100%;
+  }
+  .contact-info{
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .service-wraper {
+    flex-wrap: wrap;
+  }
+  .service-webdes {
+    padding-bottom: 30px;
+  }
+  .service-webdev {
+    padding-bottom: 30px;
+  }
+  .side-menu {
+    /* width:100% !important; */
+  }
+}
+
+@media screen and (max-width: 602px) {
+  .comp-section {
+    flex-wrap: wrap;
+  }
+  .member-two {
+    flex-direction: column;
+  }
+  .member-three {
+    flex-wrap: wrap;
+  }
+  .team-box-one {
+    width: 82%;
+  }
+  .team-box-two {
+    width: 82%;
+  }
+  .team-img {
+    width: 100%;
+  }
+  .team-info-section {
+    padding-bottom: 20px;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .team-socialmedia {
+    padding-top: 22px;
+  }
+  .team-info-section .comp-text {
+    width: 100%;
+  }
+  .portfolio-box-five{
+      
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+
+  }
+  .portfolio-project{
+    width: 100%;
+  }
+  .project-btn{
+      width: 100%;
+      padding-top: 60px;
+  }
+  .team-text{
+      width: 100%;
+      margin:0px;
+  }
+  
+  .plan-section-one{
+    padding-left: 80px;
+  }
+  .plan-section-two{
+    padding-left: 80px;
+  }
+  .app-slider{
+    left: 47px;
+    top: 42px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-
-.copyright-text{
+  .copyright-text {
     padding-left: 50px;
-}
-}
-
-@media screen and (max-width:443px){
-    .work-container{
-        padding:90px 41px;
-    }
-    .work-section{
-        text-align: center;
-    }
-    .work-section .work-tagline{
-        line-height: 0px;
-        font: 29px 'Poppins',sans-serif;
-    }
-    .work-section .brand-text{
-        width: 100%;
-    }
-    .work-btn{
-        padding-left: 74px;
-    }
+  }
+  .app-slider{
+    left: 39px;
+    top: 35px;
+  }
 }
 
-@media screen and (max-width:320px){
-    .work-btn{
-        padding-left: 34px; 
-    }
-    .digital-wraper{
-        top: 101px;
-    }
-    .team-text{
-        width: 81%;
-    }
-    .service-wraper{
-        padding:0px;
-    }
-    .service-webdes{
-        padding-right:0px;
-    }
-    .service-webdev{
-        padding-right: 0px;
-    }
+@media screen and (max-width: 443px) {
+  .work-container {
+    padding: 90px 41px;
+  }
+  .work-section {
+    text-align: center;
+  }
+  .work-section .work-tagline {
+    line-height: 0px;
+    font: 29px "Poppins", sans-serif;
+  }
+  .work-section .brand-text {
+    width: 100%;
+  }
+  .work-btn {
+    padding-left: 74px;
+  }
+  .plan-section-one{
+    padding-left: 20px;
+  }
+  .plan-section-two{
+    padding-left: 20px;
+  }
+  .app-slider{
+    left: 31px;
+    top: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .work-btn {
+    padding-left: 34px;
+  }
+  .digital-wraper {
+    top: 101px;
+  }
+  .team-text {
+    width: 100%;
+  }
+  .service-wraper {
+    padding: 0px;
+  }
+  .service-webdes {
+    padding-right: 0px;
+  }
+  .service-webdev {
+    padding-right: 0px;
+  }
+  .info-text{
+      width: 100%;
+      margin: 0px;
+  }
+  .plan-section-one{
+    padding-left: 15px;
+  }
+  .plan-section-two{
+    padding-left: 15px;
+  }
+  .counter-iteam-one{
+    width: 80%;
+  }
+  .app-slider{
+    left: 26px;
+    top: 22px;
+  }
 }

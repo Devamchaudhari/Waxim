@@ -27,11 +27,22 @@ function closeNav() {
 
 window.addEventListener('scroll', function () {
     let nav = document.getElementById("nav")
+    let scrollarrow = document.getElementById("scroll-up");
     let windowscroll = window.scrollY > 400;
     if (windowscroll) {
         nav.classList.toggle('navbar-scroll', windowscroll);
-
+        scrollarrow.classList.toggle("arrow-scroll", windowscroll);
     } else {
         nav.classList.remove("navbar-scroll");
+        scrollarrow.classList.remove("arrow-scroll", windowscroll);
     }
 })
+
+//arrow onclick function
+
+document.on('click', '.scroll-top-arrow', function () {
+    ('html, body').animate({
+        scrollTop: 0
+    }, 300);
+    return false;
+});

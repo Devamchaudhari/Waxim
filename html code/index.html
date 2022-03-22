@@ -1,394 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Waxim</title>
-    <link rel="stylesheet" href="../assets/style/index.css" />
-    <link rel="stylesheet" href="../assets/style/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <div class="main-container">
-      <!-- navbar section -->
 
-      <navbar class="navbar">
-        <!-- hero background image -->
-        <!-- hero background image -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waxim</title>
+  <link rel="stylesheet" href="../assets/style/index.css" />
+  <link rel="stylesheet" href="../assets/style/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-        <!-- navbar menu section -->
-        <div class="navbar-wrapper" id="nav">
-          <div class="navbar-nav" id="menu-blur">
-            <div class="nav-one">
-              <a href="#" class="nav-links">Home</a>
-              <a href="#" class="nav-links">About</a>
-              <a href="#" class="nav-links">Team</a>
-              <a href="#" class="nav-links">Work</a>
-            </div>
+<body>
+  <div class="main-container">
+    <!-- navbar section -->
 
-            <div class="brand-img">
-              <img
-                src="../assets/images/logo-black.png"
-                alt="brand img"
-                class="black-logo"
-              />
-              <img
-                src="../assets/images/brand-logo-white.png"
-                alt="brand img"
-                class="white-logo"
-              />
-            </div>
+    <navbar class="navbar">
+      <!-- hero background image -->
+      <!-- hero background image -->
 
-            <div class="nav-two">
-              <a href="#" class="nav-links">Pricing</a>
-              <a href="#" class="nav-links">App</a>
-              <a href="#" class="nav-links">Blog</a>
-              <a href="#" class="nav-links">Contact</a>
-            </div>
+      <!-- navbar menu section -->
+      <div class="navbar-wrapper" id="nav">
+        <div class="navbar-nav" id="menu-blur">
+          <div class="nav-one">
+            <a href="#" class="nav-links">Home</a>
+            <a href="#" class="nav-links">About</a>
+            <a href="#" class="nav-links">Team</a>
+            <a href="#" class="nav-links">Work</a>
           </div>
-          <div class="menu-icon" id="menuicon" onclick="sidemenu()">
-            <a href="#">
-              <i class="fa fa-bars"></i>
-            </a>
+
+          <div class="brand-img">
+            <img src="../assets/images/logo-black.png" alt="brand img" class="black-logo" />
+            <img src="../assets/images/brand-logo-white.png" alt="brand img" class="white-logo" />
+          </div>
+
+          <div class="nav-two">
+            <a href="#" class="nav-links">Pricing</a>
+            <a href="#" class="nav-links">App</a>
+            <a href="#" class="nav-links">Blog</a>
+            <a href="#" class="nav-links">Contact</a>
           </div>
         </div>
-        <!-- navbar menu section -->
+        <div class="menu-icon" id="menuicon" onclick="sidemenu()">
+          <a href="#">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <!-- navbar menu section -->
 
-        <!-- side menu -->
-        <div class="side-menu" id="sidemenu">
-          <a href="#" class="close-btn" onclick="closeNav()">&times;</a>
-          <a href="#" class="sidemenu-link">Home</a>
-          <a href="#" class="sidemenu-link">About</a>
-          <a href="#" class="sidemenu-link">Team</a>
-          <a href="#" class="sidemenu-link">Work</a>
-          <a href="#" class="sidemenu-link">Pricing</a>
-          <a href="#" class="sidemenu-link">App</a>
-          <a href="#" class="sidemenu-link">Blog</a>
-          <a href="#" class="sidemenu-link">Contact</a>
+      <!-- side menu -->
+      <div class="side-menu" id="sidemenu">
+        <a href="#" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="#" class="sidemenu-link">Home</a>
+        <a href="#" class="sidemenu-link">About</a>
+        <a href="#" class="sidemenu-link">Team</a>
+        <a href="#" class="sidemenu-link">Work</a>
+        <a href="#" class="sidemenu-link">Pricing</a>
+        <a href="#" class="sidemenu-link">App</a>
+        <a href="#" class="sidemenu-link">Blog</a>
+        <a href="#" class="sidemenu-link">Contact</a>
 
-          <div class="social-media">
-            <ul class="social-links">
+        <div class="social-media">
+          <ul class="social-links">
+            <li>
+              <a href="#"> <i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright-text">
+          <p>
+            © 2019 Wexim. Made With Love by Themesindustry
+            <i class="fa fa-heart"></i> Colorlib
+          </p>
+        </div>
+      </div>
+      <!-- side menu end -->
+
+      <!-- navbar section end-->
+    </navbar>
+    <div class="bg-img"></div>
+    <!-- Hero main section -->
+    <div class="hero-container" id="hero-container">
+      <div class="play-btn-wrapper">
+        <div class="play-btn">
+          <i class="fa fa-play"></i>
+        </div>
+      </div>
+      <div class="brand-tagline">
+        <h1 class="tagline">Most Flexible One Page HTML5 Template</h1>
+      </div>
+      <div class="brand-text">
+        <p class="textline">
+          The integration of web fonts has always been one of the largest
+          contributing factors to diversity in the overall look and feel of
+          websites today vs. yesterday.
+        </p>
+      </div>
+      <div class="learnmore-btn">
+        <div class="activebtn">
+          <button class="learnmore-btn-active">Learn More</button>
+        </div>
+        <div class="notactive-btn">
+          <button class="learnmore-btn-notactive">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <!-- Hero main section -->
+
+    <!-- brand Feature -->
+
+    <div class="brand-wraper">
+      <div class="brand-work">
+        <div class="work-container">
+          <div class="work-section">
+            <span class="span-text">ALWAYS BEHIND THE BRANDS</span>
+            <h1 class="work-tagline">
+              A Studio Helping Web 2.0 Gain Some Momentum.
+            </h1>
+            <p class="brand-text">
+              The integration of web fonts has always been one of the largest
+              contributing factors to diversity in the overall look and feel
+              of websites today vs. yesterday.
+            </p>
+          </div>
+          <div class="project-progress">
+            <div class="project-info">
+              <p class="project-name">Project Management</p>
+              <p class="progress-number">90%</p>
+            </div>
+            <div class="progress-line proj-manag">
+              <span class="proj-manag"></span>
+            </div>
+            <div class="project-info">
+              <p class="project-name">Web Consulting</p>
+              <p class="progress-number">75%</p>
+            </div>
+            <div class="progress-line web-cons">
+              <span class="web-cons"></span>
+            </div>
+            <div class="project-info">
+              <p class="project-name">Web Consulting</p>
+              <p class="progress-number">75%</p>
+            </div>
+            <div class="progress-line web-cons">
+              <span class="web-cons"></span>
+            </div>
+          </div>
+          <div class="work-btn">
+            <button class="get-started-btn">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="side-img">
+        <img src="../assets/images/half-block1.jpg" alt="Girl" />
+      </div>
+    </div>
+    <!-- brand Feature -->
+
+    <!-- Basic company info -->
+    <div class="info-container">
+      <div class="info-wraper">
+        <span class="info-span">Basic info about company</span>
+        <h1 class="info-tag">Our Services</h1>
+        <div class="info-text-container">
+          <p class="info-text">
+            Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
+            suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
+            metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
+            justo sed mi finibus, vel tristique risus faucibus.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-container">
+        <div class="service-wraper">
+          <div class="service-webdes">
+            <span class="service-span">01.</span>
+            <p class="service-text">Website Design</p>
+            <p class="service-desc">
+              Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
+              accumsan ipsum dolor sit amet, consectetur adipiscing.
+            </p>
+          </div>
+          <div class="service-webdev">
+            <span class="service-span">02.</span>
+            <p class="service-text">Website Development</p>
+            <p class="service-desc">
+              Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
+              accumsan ipsum dolor sit amet, consectetur adipiscing
+            </p>
+          </div>
+          <div class="service-proj">
+            <span class="service-span">03.</span>
+            <p class="service-text">Project Management</p>
+            <p class="service-desc">
+              Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
+              accumsan ipsum dolor sit amet, consectetur adipiscing
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Basic company info -->
+    <!-- exculsive digital service -->
+    <div class="digital-container">
+      <div class="dg-img"></div>
+      <div class="digital-wraper">
+        <span class="dg-span">
+          Unleash your creative potential with Wexim
+        </span>
+        <h1 class="dg-text">Looking For Exclusive Digital Services?</h1>
+        <div class="dg-btn-div">
+          <button class="dg-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <!-- exculsive digital service -->
+
+    <!-- company team -->
+    <div class="team-container">
+      <div class="team-wrapper">
+        <span class="team-span"> Basic info about company </span>
+        <h1 class="team-tagline">Creative Heads</h1>
+        <div class="team-text--div">
+          <p class="team-text">
+            Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
+            suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
+            metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
+            justo sed mi finibus, vel tristique risus faucibus.
+          </p>
+        </div>
+      </div>
+
+      <div class="comp-wrapper">
+        <div class="comp-section">
+          <div class="team-box-one">
+            <div class="member-one">
+              <div class="team-img">
+                <img src="../assets/images/team-img2.jpg" alt="team person" />
+              </div>
+              <div class="team-info-section">
+                <h2 class="team-name">Alex Walkin</h2>
+                <span class="desig-name">Developer</span>
+                <p class="comp-text">
+                  Quisque vitae sodales lectus. Nam porttitor justo sed mi
+                  finibus, vel tristique risus faucibus.
+                </p>
+                <div class="team-socialmedia">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="member-two">
+              <div class="team-img">
+                <img src="../assets/images/team-img1.jpg" alt="team person" />
+              </div>
+              <div class="team-info-section">
+                <h2 class="team-name">Alex Walkin</h2>
+                <span class="desig-name">Developer</span>
+                <p class="comp-text">
+                  Quisque vitae sodales lectus. Nam porttitor justo sed mi
+                  finibus, vel tristique risus faucibus.
+                </p>
+                <div class="team-socialmedia">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-box-two">
+            <div class="member-three">
+              <div class="team-img">
+                <img src="../assets/images/team-img3.jpg" alt="team person" />
+              </div>
+              <div class="team-info-section">
+                <h2 class="team-name">Alex Walkin</h2>
+                <span class="desig-name">Developer</span>
+                <p class="comp-text">
+                  Quisque vitae sodales lectus. Nam porttitor justo sed mi
+                  finibus, vel tristique risus faucibus.
+                </p>
+                <div class="team-socialmedia">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="member-four">
+              <div class="team-img">
+                <img src="../assets/images/team-img4.jpg" alt="team person" />
+              </div>
+              <div class="team-info-section">
+                <h2 class="team-name">Alex Walkin</h2>
+                <span class="desig-name">Developer</span>
+                <p class="comp-text">
+                  Quisque vitae sodales lectus. Nam porttitor justo sed mi
+                  finibus, vel tristique risus faucibus.
+                </p>
+                <div class="team-socialmedia">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- company team end -->
+
+    <!-- creative protfolio -->
+    <div class="portfolio-container">
+      <div class="portfolio-wraper">
+        <div class="portfolio-box-one">
+          <div class="portfolio-img-wraper">
+       
+            <div class="my-img1">
+            <img src="../assets/images/portfolio-1.jpg" alt=" portfolio image" class="img-one">
+              <div class="my-overlay">
+               <div class="overlay-text"> 
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                <h1>Latest Work</h1>
+                <p>See Our Amazing Work</p> 
+              </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="portfolio-box-two">
+          <div class="portfolio-creative">
+
+            <span class="creative-span">Basic info about company</span>
+            <h1 class="creative-tagline">Creative Portfolio</h1>
+            <div class="creative-text-wraper">
+              <p class="creative-text">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.
+                Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-img-wraper">
+            <div class="my-img">
+            <img src="../assets/images/portfolio-2.jpg" alt=" portfolio image" class="img-two">
+            <div class="my-overlay">
+              <div class="overlay-text"> 
+               <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+               <h1>Latest Work</h1>
+               <p>See Our Amazing Work</p> 
+             </div>
+             </div>
+         </div>
+          </div>
+
+        </div>
+
+
+        <div class="portfolio-box-three">
+          <div class="portfolio-img-wraper">
+            <div class="my-img">
+            <img src="../assets/images/portfolio-3.jpg" alt=" portfolio image" class="img-three">
+            <div class="my-overlay">
+              <div class="overlay-text"> 
+               <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+               <h1>Latest Work</h1>
+               <p>See Our Amazing Work</p> 
+             </div>
+             </div>
+         </div>
+          </div>
+        </div>
+        <div class="portfolio-box-four">
+          <div class="portfolio-img-wraper">
+            <div class="my-img">
+            <img src="../assets/images/portfolio-4.jpg" alt=" portfolio image" class="img-four">
+            <div class="my-overlay">
+              <div class="overlay-text"> 
+               <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+               <h1>Latest Work</h1>
+               <p>See Our Amazing Work</p> 
+             </div>
+             </div>
+         </div>
+          </div>
+        </div>
+        <div class="portfolio-box-five">
+          <div class="portfolio-project">
+            <p class="portfolio-text">We’ve Completed More Than</p>
+            <h1 class="project-number">682</h1>
+            <p class="portfolio-text">projects for our amazing clients,
+
+            </p>
+          </div>
+          <div class="project-btn">
+            <button class="pro-view-btn"> View All Work</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- creative protfolio -->
+
+  <!-- Pricing section -->
+  <div class="pricing-container">
+    <div class="pricing-wraper">
+
+      <span class="pricing-span">Most flexible pricing</span>
+      <h1 class="pricing-tag">Easy Pricing</h1>
+      <div class="pricing-text-container">
+        <p class="pricing-text">
+          Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
+          suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
+          metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
+          justo sed mi finibus, vel tristique risus faucibus.
+        </p>
+      </div>
+
+    </div>
+    <div class="plans-container">
+      <div class="plan-section-one">
+        <div class="plan-box-one">
+          <h2 class="plan-name">Starter Plan</h2>
+          <div class="plan-desc">
+            <p class="plan-text"> If you are a small business and you are interested in small rebranding then this is a
+              perfect plan for
+              you</p>
+          </div>
+          <div class="plan-price-wraper">
+            <h1 class="plan-price"><sup>$</sup>29.99</h1>
+            <span class="plan-month">MONTH</span>
+          </div>
+          <ul class="plan-package">
+            <li><i class="fa fa-check"></i>Full access</li>
+            <li><i class="fa fa-check"></i>Unlimited Bandwidth</li>
+            <li><i class="fa fa-check"></i>Unlimited Bandwidth</li>
+            <li><i class="fa fa-check"></i>Powerful Admin Panel</li>
+            <li><i class="fa fa-times"></i>Email Accounts
+            <li>
+            <li><i class="fa fa-times"></i>Email Accounts
+            <li>
+            <li><i class="fa fa-times"></i>8 Free Forks Every Months</li>
+          </ul>
+          <div class="plan-btn">
+            <button>Get Started</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan-section-two">
+        <div class="plan-box-two">
+          <h2 class="plan-name">Starter Plan</h2>
+          <div class="plan-desc">
+            <p class="plan-text"> If you are a small business and you are interested in small rebranding then this is a
+              perfect plan for
+              you</p>
+          </div>
+          <div class="plan-price-wraper">
+            <h1 class="plan-price"><sup>$</sup>29.99</h1>
+            <span class="plan-month">MONTH</span>
+          </div>
+          <ul class="plan-package">
+            <li><i class="fa fa-check"></i>Full access</li>
+            <li><i class="fa fa-check"></i>Unlimited Bandwidth</li>
+            <li><i class="fa fa-check"></i>Unlimited Bandwidth</li>
+            <li><i class="fa fa-check"></i>Powerful Admin Panel</li>
+            <li><i class="fa fa-times"></i>Email Accounts
+            <li>
+            <li><i class="fa fa-times"></i>Email Accounts
+            <li>
+            <li><i class="fa fa-times"></i>8 Free Forks Every Months</li>
+          </ul>
+          <div class="plan-btn">
+            <button>Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pricing section -->
+
+  <!-- testimonal section-->
+
+  <div class="testimonal-container">
+    <div class="testimonal-box-one">
+      <i class="fa fa-quote-right"></i>
+
+      <div class="testimonal-desc-div">
+        <p class="testimonal-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel
+          dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et
+          mi. In at tempor purus. Nunc aliquet lacus vel posuere volutpat. Fusce ultrices sollicitudin nisl nec
+          elementum. </p>
+      </div>
+
+      <div class="employee-info">
+        <img src="../assets/images/testimonial-img1.jpg" alt="testimonial-img1">
+        <p class="employee-name">Sara WIlliamson</p>
+        <p class="employee-desig">Project Manager, The Company Inc.</p>
+      </div>
+    </div>
+    <div class="testimonal-box-two">
+      <div class="testimonal-img-two">
+        <div class="bg-gradient"></div>
+        <div class="counter-container">
+          <div class="counter-iteam-one">
+            <div class="counter-item">
+              <h2>69</h2>
+              <p>Award Won</p>
+            </div>
+            <div class="counter-item">
+              <h2>780</h2>
+              <p>Employees</p>
+            </div>
+            <div class="counter-item">
+              <h2>456</h2>
+              <p>Happy Clients</p>
+            </div>
+            <div class="counter-item">
+              <h2>599</h2>
+              <p>Finished Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- testimonal section-->
+
+  <!-- Mobile App design -->
+  <div class="mobile-container">
+    <div class="mobile-wraper">
+
+      <span class="mobile-span">Most reliable application</span>
+      <h1 class="mobile-tag">Mobile App Design</h1>
+      <div class="mobile-text-container">
+        <p class="mobile-text">
+          Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
+          suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
+          metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
+          justo sed mi finibus, vel tristique risus faucibus.
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- Mobile App design -->
+
+  <div class="design-container">
+      <div class="design-box-one">
+        <div class="app-feature-one">
+        <i class="fa fa-diamond "></i>
+        <h1>Theme Options</h1>
+       <div class="design-text-wraper"> 
+         <p class="design-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit Suspendisse in orci enim gravida nibh.</p>
+        </div>
+      </div>
+
+      <div class="app-feature-two">
+        <i class="fa fa-edit "></i>
+        <h1>Customization</h1>
+       <div class="design-text-wraper"> 
+         <p class="design-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit Suspendisse in orci enim gravida nibh.</p>
+        </div>
+      </div>
+        
+      </div>
+    
+        <div class="design-box-two">
+          <div class="app-image">
+          <img src="../assets/images/iphone-img.png" alt="phone image">
+          <div class="app-slider">
+            <img src="../assets/images/iphone-slide.jpg" alt="slide image">
+          </div>
+        </div>
+        </div>
+      <div class="design-box-three">
+        <div class="app-feature-one">
+          <i class="fa fa-code "></i>
+          <h1>Theme Options</h1>
+         <div class="design-text-wraper"> 
+           <p class="design-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit Suspendisse in orci enim gravida nibh.</p>
+          </div>
+        </div>
+  
+        <div class="app-feature-two">
+          <i class="fa fa-folder-open-o "></i>
+          <h1>Customization</h1>
+         <div class="design-text-wraper"> 
+           <p class="design-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit Suspendisse in orci enim gravida nibh.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Mobile App design -->
+
+  <!-- Living Your Dreams -->
+  <div class="dream-container">
+      <div class="dream-box-one">
+          <span>January 14, 2019</span>
+          <h1>Living Your Dreams</h1>
+          <div class="dream-text-container">
+          <p class="dream-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt temp to the incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis a nostr a exercitation ullamco laboris nisi ut aliquip.</p>
+        </div>
+        <div class="dream-btn">
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="dream-box-two">
+        <div class="dream-img">
+          <img src="../assets/images/blog-half1.jpg" alt=" dream computer">
+        </div>
+      </div>
+  </div>
+  <!-- Living Your Dreams -->
+
+  <!-- Company contact -->
+  <div class="contact-container">
+    <div class="contact-box-one">
+      <div class="contact-img">
+        <div class="bg-gradient"></div>
+        <div class="contact-info">
+          <p class="lorem-text">Lorem ipsum dolor sit amet consectetur</p>
+          <h1 class="company-name">Wexim Agency, Newyork</h1>
+          <p class="company-address">123 Stree New York City , United States Of America.</p>
+          <p class="contact-telephone">Office Telephone : 001 01085379709</p>
+          <p class="contact-number">Mobile : 001 63165370895</p>
+          <p class="contact-mail">mail : admin@website.com</p>
+          <p  class="contact-Inquirymail">Inquiries : email@website.com</p>
+          <div class="contact-socials">
+            <ul class="contact-links">
               <li>
                 <a href="#"> <i class="fa fa-facebook"></i></a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-instagram"></i></a>
+                <a href="#"> <i class="fa fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-twitter"></i></a>
+                <a href="#"> <i class="fa fa-google-plus"></i></a>
+              </li>
+              
+              <li>
+                <a href="#"> <i class="fa fa-linkedin"></i></a>
+              </li>
+              
+              <li>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
               </li>
             </ul>
           </div>
 
-          <div class="copyright-text">
-            <p>
-              © 2019 Wexim. Made With Love by Themesindustry
-              <i class="fa fa-heart"></i> Colorlib
-            </p>
-          </div>
-        </div>
-        <!-- side menu end -->
-
-        <!-- navbar section end-->
-      </navbar>
-      <div class="bg-img"></div>
-      <!-- Hero main section -->
-      <div class="hero-container" id="hero-container">
-        <div class="play-btn-wrapper">
-          <div class="play-btn">
-            <i class="fa fa-play"></i>
-          </div>
-        </div>
-        <div class="brand-tagline">
-          <h1 class="tagline">Most Flexible One Page HTML5 Template</h1>
-        </div>
-        <div class="brand-text">
-          <p class="textline">
-            The integration of web fonts has always been one of the largest
-            contributing factors to diversity in the overall look and feel of
-            websites today vs. yesterday.
-          </p>
-        </div>
-        <div class="learnmore-btn">
-          <div class="activebtn">
-            <button class="learnmore-btn-active">Learn More</button>
-          </div>
-          <div class="notactive-btn">
-            <button class="learnmore-btn-notactive">Learn More</button>
-          </div>
         </div>
       </div>
-      <!-- Hero main section -->
-
-      <!-- brand Feature -->
-
-      <div class="brand-wraper">
-        <div class="brand-work">
-          <div class="work-container">
-            <div class="work-section">
-              <span class="span-text">ALWAYS BEHIND THE BRANDS</span>
-              <h1 class="work-tagline">
-                A Studio Helping Web 2.0 Gain Some Momentum.
-              </h1>
-              <p class="brand-text">
-                The integration of web fonts has always been one of the largest
-                contributing factors to diversity in the overall look and feel
-                of websites today vs. yesterday.
-              </p>
-            </div>
-            <div class="project-progress">
-              <div class="project-info">
-                <p class="project-name">Project Management</p>
-                <p class="progress-number">90%</p>
-              </div>
-              <div class="progress-line proj-manag">
-                <span class="proj-manag"></span>
-              </div>
-              <div class="project-info">
-                <p class="project-name">Web Consulting</p>
-                <p class="progress-number">75%</p>
-              </div>
-              <div class="progress-line web-cons">
-                <span class="web-cons"></span>
-              </div>
-              <div class="project-info">
-                <p class="project-name">Web Consulting</p>
-                <p class="progress-number">75%</p>
-              </div>
-              <div class="progress-line web-cons">
-                <span class="web-cons"></span>
-              </div>
-            </div>
-            <div class="work-btn">
-              <button class="get-started-btn">Get started</button>
-            </div>
-          </div>
-        </div>
-        <div class="side-img">
-          <img src="../assets/images/half-block1.jpg" alt="Girl" />
-        </div>
-      </div>
-      <!-- brand Feature -->
-
-      <!-- Basic company info -->
-      <div class="info-container">
-        <div class="info-wraper">
-          <span class="info-span">Basic info about company</span>
-          <h1 class="info-tag">Our Services</h1>
-          <div class="info-text-container">
-            <p class="info-text">
-              Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
-              suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
-              metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
-              justo sed mi finibus, vel tristique risus faucibus.
-            </p>
-          </div>
-        </div>
-
-        <div class="service-container">
-          <div class="service-wraper">
-            <div class="service-webdes">
-              <span class="service-span">01.</span>
-              <p class="service-text">Website Design</p>
-              <p class="service-desc">
-                Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
-                accumsan ipsum dolor sit amet, consectetur adipiscing.
-              </p>
-            </div>
-            <div class="service-webdev">
-              <span class="service-span">02.</span>
-              <p class="service-text">Website Development</p>
-              <p class="service-desc">
-                Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
-                accumsan ipsum dolor sit amet, consectetur adipiscing
-              </p>
-            </div>
-            <div class="service-proj">
-              <span class="service-span">03.</span>
-              <p class="service-text">Project Management</p>
-              <p class="service-desc">
-                Lorem ipsum dolor amet, consectetur adipiscing elit augue diam,
-                accumsan ipsum dolor sit amet, consectetur adipiscing
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Basic company info -->
-      <!-- exculsive digital service -->
-      <div class="digital-container">
-        <div class="dg-img"></div>
-        <div class="digital-wraper">
-          <span class="dg-span">
-            Unleash your creative potential with Wexim
-          </span>
-          <h1 class="dg-text">Looking For Exclusive Digital Services?</h1>
-          <div class="dg-btn-div">
-            <button class="dg-btn">Learn More</button>
-          </div>
-        </div>
-      </div>
-      <!-- exculsive digital service -->
-
-      <!-- company team -->
-      <div class="team-container">
-        <div class="team-wrapper">
-          <span class="team-span"> Basic info about company </span>
-          <h1 class="team-tagline">Creative Heads</h1>
-          <div class="team-text--div">
-            <p class="team-text">
-              Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
-              suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
-              metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
-              justo sed mi finibus, vel tristique risus faucibus.
-            </p>
-          </div>
-        </div>
-
-        <div class="comp-wrapper">
-          <div class="comp-section">
-            <div class="team-box-one">
-              <div class="member-one">
-                <div class="team-img">
-                  <img src="../assets/images/team-img2.jpg" alt="team person" />
-                </div>
-                <div class="team-info-section">
-                  <h2 class="team-name">Alex Walkin</h2>
-                  <span class="desig-name">Developer</span>
-                  <p class="comp-text">
-                    Quisque vitae sodales lectus. Nam porttitor justo sed mi
-                    finibus, vel tristique risus faucibus.
-                  </p>
-                  <div class="team-socialmedia">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="member-two">
-                <div class="team-img">
-                  <img src="../assets/images/team-img1.jpg" alt="team person" />
-                </div>
-                <div class="team-info-section">
-                  <h2 class="team-name">Alex Walkin</h2>
-                  <span class="desig-name">Developer</span>
-                  <p class="comp-text">
-                    Quisque vitae sodales lectus. Nam porttitor justo sed mi
-                    finibus, vel tristique risus faucibus.
-                  </p>
-                  <div class="team-socialmedia">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="team-box-two">
-              <div class="member-three">
-                <div class="team-img">
-                  <img src="../assets/images/team-img3.jpg" alt="team person" />
-                </div>
-                <div class="team-info-section">
-                  <h2 class="team-name">Alex Walkin</h2>
-                  <span class="desig-name">Developer</span>
-                  <p class="comp-text">
-                    Quisque vitae sodales lectus. Nam porttitor justo sed mi
-                    finibus, vel tristique risus faucibus.
-                  </p>
-                  <div class="team-socialmedia">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="member-four">
-                <div class="team-img">
-                  <img src="../assets/images/team-img4.jpg" alt="team person" />
-                </div>
-                <div class="team-info-section">
-                  <h2 class="team-name">Alex Walkin</h2>
-                  <span class="desig-name">Developer</span>
-                  <p class="comp-text">
-                    Quisque vitae sodales lectus. Nam porttitor justo sed mi
-                    finibus, vel tristique risus faucibus.
-                  </p>
-                  <div class="team-socialmedia">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- company team end -->
-
-      <!-- creative protfolio -->
-      <div class="portfolio-container">
-        <div class="portfolio-wraper">
-          <div class="portfolio-box-one">
-            <div class="portfolio-img-wraper">
-              <img src="../assets/images/portfolio-1.jpg" alt=" portfolio image" class="img-one">
-            </div>
-          </div>
-          <div class="portfolio-box-two">
-            <div class="portfolio-creative">
-                  
-              <span class="creative-span">Basic info about company</span>
-              <h1 class="creative-tagline">Creative Portfolio</h1>
-              <div class="creative-text-wraper"><p class="creative-text">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.</p></div>
-              </div>
-              <div class="portfolio-img-wraper">
-              <img src="../assets/images/portfolio-2.jpg" alt=" portfolio image"  class="img-two">
-              </div>
-          
-            </div>
-          
-            
-            <div class="portfolio-box-three">
-              <div class="portfolio-img-wraper">
-                <img src="../assets/images/portfolio-3.jpg" alt=" portfolio image" class="img-three">
-              </div>
-            </div>
-            <div class="portfolio-box-four">
-              <div class="portfolio-img-wraper">
-                <img src="../assets/images/portfolio-4.jpg" alt=" portfolio image" class="img-four">
-              </div>
-              </div>
-              <div class="portfolio-box-five">
-                  <div class="portfolio-project">
-                        <p class="portfolio-text">We’ve Completed More Than</p>
-                        <h1 class="project-number">682</h1>
-                        <p class="portfolio-text">projects for our amazing clients,
-
-                        </p>
-                  </div>
-                  <div class="project-btn">
-                      <button class="pro-view-btn"> View All Work</button>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <!-- creative protfolio -->
     </div>
+    <div class="contact-box-two">
+        <div class="contact-form">
+          <div class="form-grp">
+            <div class="form-type">
+                <input type="text" name="first name" placeholder="First Name:" required class="form-control">
+            </div>
+            <div class="form-type">
+              <input type="text" name="last name" placeholder="Last Name:" required class="form-control">
+            </div>
+            <div class="form-type">
+              <input type="email" name="email" placeholder="Email:" required class="form-control"> 
+            </div>
+            <div class="form-type">
+              <input type="number" name="number" placeholder="phone:" required class="form-control">
+            </div>
+            <div class="form-type-textarea">
+              <textarea  name="number" placeholder="Message:" required class="form-control-textarea" spellcheck="false"></textarea>
+            </div>
+            
+          </div>
+          <div class="contact-btn">
+            <button>Contact Now</button>
+          </div>
+        </div>
+    </div>
+</div>
+  <!-- Company contact -->
 
-    <script src="../assets/script/index.js"></script>
-  </body>
+  <!-- Footer -->
+
+  <div class="footer-container">
+    <div class="footer-socials">
+      <ul class="footer-links">
+        <li>
+          <a href="#"> <i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa fa-google-plus"></i></a>
+        </li>
+        
+        <li>
+          <a href="#"> <i class="fa fa-linkedin"></i></a>
+        </li>
+        
+        <li>
+          <a href="#"> <i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+
+      <p class="footer-text">© 2019 Wexim. Made With Love By Themesindustry</p>
+    </div>
+  </div>
+  <!-- Footer -->
+  <!-- Arrow button -->
+  <a href="#" class="scroll-arrow" id="scroll-up">
+    <i class="fa fa-angle-up"></i>
+  </a>
+    <!-- Arrow button -->
+  </div>
+
+  <script src="../assets/script/index.js"></script>
+</body>
+
 </html>
