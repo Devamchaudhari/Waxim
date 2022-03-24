@@ -369,6 +369,10 @@
     left: 39px;
     top: 35px;
   }
+  .my-img{
+    width: 74%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 443px) {

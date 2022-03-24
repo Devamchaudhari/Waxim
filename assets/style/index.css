@@ -1129,9 +1129,12 @@ justify-content: center;
     font: 14px 'Poppins',sans-serif;
     font-weight: 500;
     background-image: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
-
+    background-size: 200% auto;
+    transition: 0.5s ease;
 }
-
+.pro-view-btn:hover{
+    background-position: right center;
+}
 /* creative protfolio */
 
 /* pricing section */
@@ -1529,14 +1532,22 @@ padding: 12px 38px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: 500;
+    transition: 0.5s ease;
 }
 
+.app-feature-one .fa-diamond:hover{
+    transform: translateY(-15px);
+}
 .app-feature-two .fa-edit{
     font-size: 40px;
     background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: 500;
+    transition: 0.5s ease;
+}
+.app-feature-two .fa-edit:hover{
+    transform: translateY(-15px);
 }
 .app-feature-one h1{
     font:24px 'Poppins',sans-serif;
@@ -1597,14 +1608,21 @@ padding: 12px 38px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: 500;
+    transition: 0.5s ease;
 }
-
+.app-feature-one .fa-code:hover{
+    transform: translateY(-15px);
+}
 .app-feature-two .fa-folder-open-o{
     font-size: 40px;
     background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: 500;
+    transition: 0.5s ease;
+}
+.app-feature-two .fa-folder-open-o:hover{
+    transform: translateY(-15px);
 }
 /* Mobile App design */
 
@@ -1647,9 +1665,13 @@ padding: 12px 38px;
     background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
     border:none;
     color: white;
+    background-size: 120% auto;
     font:14px 'Poppins',sans-serif;
     font-weight: 500;
     padding: 12px 38px;
+}
+.dream-btn button:hover{
+    background-position: right center;
 }
 .dream-box-two{
     width: 50%;
@@ -1789,6 +1811,7 @@ text-align: center;
 }
 .form-control{
     border:none;
+    outline:none;
     border-bottom: 1px solid #e2e2e2;
     width: 80%;
     font: 14px 'Poppins',sans-serif;
@@ -1802,6 +1825,7 @@ text-align: center;
 }
 .form-control-textarea{
     border:none;
+    outline: none;
     border-bottom: 1px solid #e2e2e2;
     width: 95%;
     font: 14px 'Poppins',sans-serif;
@@ -1817,14 +1841,17 @@ text-align: center;
     width: 100%;
     text-align: center;
 }
-
 .contact-btn button{
     background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
     border: none;
     color: white;
+    background-size: 120% auto;
     font: 14px 'Poppins',sans-serif;
     font-weight: 500;
     padding: 12px 38px;
+}
+.contact-btn button:hover{
+    background-position: right center;
 }
 /* Company Contact */
 
@@ -1918,6 +1945,7 @@ text-align: center;
       z-index: 99;
       border-radius: 100%;
       background-size: 200% auto;
+      transition: 0.5s ease;
       background-image: linear-gradient(to right, #3264f5 0%, #7202bb 51%, #3264f5 100%);
   }
   
