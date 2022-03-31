@@ -24,9 +24,9 @@
         <div class="navbar-nav" id="menu-blur">
           <div class="nav-one">
             <a href="#" class="nav-links">Home</a>
-            <a href="#" class="nav-links">About</a>
-            <a href="#" class="nav-links">Team</a>
-            <a href="#" class="nav-links">Work</a>
+            <a href="#brand" class="nav-links">About</a>
+            <a href="#teams" class="nav-links">Team</a>
+            <a href="#portfolio" class="nav-links">Work</a>
           </div>
 
           <div class="brand-img">
@@ -35,14 +35,14 @@
           </div>
 
           <div class="nav-two">
-            <a href="#" class="nav-links">Pricing</a>
-            <a href="#" class="nav-links">App</a>
-            <a href="#" class="nav-links">Blog</a>
-            <a href="#" class="nav-links">Contact</a>
+            <a href="#pricing" class="nav-links">Pricing</a>
+            <a href="#mobile" class="nav-links">App</a>
+            <a href="#dream" class="nav-links">Blog</a>
+            <a href="#contact" class="nav-links">Contact</a>
           </div>
         </div>
         <div class="menu-icon" id="menuicon" onclick="sidemenu()">
-          <a href="#">
+          <a href="javascript:void(1)">
             <i class="fa fa-bars"></i>
           </a>
         </div>
@@ -51,15 +51,15 @@
 
       <!-- side menu -->
       <div class="side-menu" id="sidemenu">
-        <a href="#" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(1)" class="close-btn" onclick="closeNav()">&times;</a>
         <a href="#" class="sidemenu-link">Home</a>
-        <a href="#" class="sidemenu-link">About</a>
-        <a href="#" class="sidemenu-link">Team</a>
-        <a href="#" class="sidemenu-link">Work</a>
-        <a href="#" class="sidemenu-link">Pricing</a>
-        <a href="#" class="sidemenu-link">App</a>
-        <a href="#" class="sidemenu-link">Blog</a>
-        <a href="#" class="sidemenu-link">Contact</a>
+        <a href="#brand" class="sidemenu-link">About</a>
+        <a href="#teams" class="sidemenu-link">Team</a>
+        <a href="#portfolio" class="sidemenu-link">Work</a>
+        <a href="#pricing" class="sidemenu-link">Pricing</a>
+        <a href="#mobile" class="sidemenu-link">App</a>
+        <a href="#dream" class="sidemenu-link">Blog</a>
+        <a href="#contact" class="sidemenu-link">Contact</a>
 
         <div class="social-media">
           <ul class="social-links">
@@ -117,7 +117,7 @@
 
     <!-- brand Feature -->
 
-    <div class="brand-wraper">
+    <div class="brand-wraper" id="brand">
       <div class="brand-work">
         <div class="work-container">
           <div class="work-section">
@@ -129,7 +129,7 @@
               The integration of web fonts has always been one of the largest
               contributing factors to diversity in the overall look and feel
               of websites today vs. yesterday.
-            </p>
+            </p>  
           </div>
           <div class="project-progress">
             <div class="project-info">
@@ -226,7 +226,7 @@
     <!-- exculsive digital service -->
 
     <!-- company team -->
-    <div class="team-container">
+    <div class="team-container" id="teams">
       <div class="team-wrapper">
         <span class="team-span"> Basic info about company </span>
         <h1 class="team-tagline">Creative Heads</h1>
@@ -247,7 +247,7 @@
               <div class="team-img">
                 <img src="../assets/images/team-img2.jpg" alt="team person" />
               </div>
-              <div class="team-info-section">
+              <div class="team-info-section team-info-left">
                 <h2 class="team-name">Alex Walkin</h2>
                 <span class="desig-name">Developer</span>
                 <p class="comp-text">
@@ -267,7 +267,7 @@
               <div class="team-img">
                 <img src="../assets/images/team-img1.jpg" alt="team person" />
               </div>
-              <div class="team-info-section">
+              <div class="team-info-section team-info-left">
                 <h2 class="team-name">Alex Walkin</h2>
                 <span class="desig-name">Developer</span>
                 <p class="comp-text">
@@ -289,7 +289,7 @@
               <div class="team-img">
                 <img src="../assets/images/team-img3.jpg" alt="team person" />
               </div>
-              <div class="team-info-section">
+              <div class="team-info-section team-info-right">
                 <h2 class="team-name">Alex Walkin</h2>
                 <span class="desig-name">Developer</span>
                 <p class="comp-text">
@@ -305,11 +305,11 @@
               </div>
             </div>
 
-            <div class="member-four">
+            <div class="member-four ">
               <div class="team-img">
                 <img src="../assets/images/team-img4.jpg" alt="team person" />
               </div>
-              <div class="team-info-section">
+              <div class="team-info-section team-info-right">
                 <h2 class="team-name">Alex Walkin</h2>
                 <span class="desig-name">Developer</span>
                 <p class="comp-text">
@@ -319,7 +319,7 @@
                 <div class="team-socialmedia">
                   <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa faP-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
                   <a href="#"><i class="fa fa-instagram"></i></a>
                 </div>
               </div>
@@ -331,7 +331,7 @@
     <!-- company team end -->
 
     <!-- creative protfolio -->
-    <div class="portfolio-container">
+    <div class="portfolio-container" id="portfolio">
       <div class="portfolio-wraper">
         <div class="portfolio-box-one">
           <div class="portfolio-img-wraper">
@@ -421,7 +421,7 @@
   <!-- creative protfolio -->
 
   <!-- Pricing section -->
-  <div class="pricing-container">
+  <div class="pricing-container" id="pricing">
     <div class="pricing-wraper">
 
       <span class="pricing-span">Most flexible pricing</span>
@@ -545,7 +545,7 @@
   <!-- testimonal section-->
 
   <!-- Mobile App design -->
-  <div class="mobile-container">
+  <div class="mobile-container" id="mobile">
     <div class="mobile-wraper">
 
       <span class="mobile-span">Most reliable application</span>
@@ -612,7 +612,7 @@
   <!-- Mobile App design -->
 
   <!-- Living Your Dreams -->
-  <div class="dream-container">
+  <div class="dream-container" id="dream">
       <div class="dream-box-one">
           <span>January 14, 2019</span>
           <h1>Living Your Dreams</h1>
@@ -632,7 +632,7 @@
   <!-- Living Your Dreams -->
 
   <!-- Company contact -->
-  <div class="contact-container">
+  <div class="contact-container" id="contact">
     <div class="contact-box-one">
       <div class="contact-img">
         <div class="bg-gradient"></div>
@@ -697,6 +697,12 @@
 </div>
   <!-- Company contact -->
 
+  <!--goggle Map -->
+  <div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14683.004169683323!2d72.53231360000001!3d23.0695871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e834bfa9b0ba3%3A0x3be8e1cdf601399!2sRenaissance%20Ahmedabad%20Hotel!5e0!3m2!1sen!2sin!4v1648013171319!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+  <!--goggle Map -->
   <!-- Footer -->
 
   <div class="footer-container">
